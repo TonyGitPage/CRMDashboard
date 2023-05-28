@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Dashboard</title>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon//favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/style.min.css">
+    
+</head>
+<body>
+
+    <section class="menu">
+        <div class="menu__logo">
+            <img src="icons/mane/setting_1.svg" alt="logo">
+            <div class="menu__logo-text">Dashboard</div>
+            <div class="menu__logo-version">v.01</div>
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="icons/mane/key-square.svg" alt="key">
+                    <div class="menu__item">Dashboard</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="icons/mane/3d-square-1.svg" alt="3d">
+                    <div class="menu__item">Product</div>
+                    <img src="icons/mane/chevron-right-2.svg" class="menu__chevron" alt="chevron">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="active">
+                    <img src="icons/mane/user-square-1.svg" alt="user">
+                    <div class="menu__item">Customers</div>
+                    <img src="icons/mane/chevron-right-2_white.svg" class="menu__chevron" alt="chevron">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="icons/mane/wallet-money-2.svg" alt="wallet">
+                    <div class="menu__item">Income</div>
+                    <img src="icons/mane/chevron-right-2.svg" class="menu__chevron" alt="chevron">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="icons/mane/discount-shape-1.svg" alt="discount">
+                    <div class="menu__item">Promote</div>
+                    <img src="icons/mane/chevron-right-2.svg" class="menu__chevron" alt="chevron">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="icons/mane/message-question-1.svg" alt="message">
+                    <div class="menu__item">Help</div>
+                    <img src="icons/mane/chevron-right-2.svg" class="menu__chevron" alt="chevron">
+                </a>
+            </li>
+        </ul>
+        <div class="menu__user">
+            <div class="menu__photo">
+                <img src="img/Evano.png" alt="user">
+            </div>
+            <div class="menu__info">
+                <div class="menu__info-name">Evano</div>
+                <div class="menu__item-title">Project Manager</div>
+            </div>
+        </div>
+        <div class="menu__overlay"></div>
+    </section>
+
+    <section class="main">
+        <div class="customers">
+            <h1>Hello Evano 👋🏼,</h1>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="customers__header">
+                <div class="customers__block">
+                    <div class="customers__block-title">All Customers</div>
+                    <div class="customers__block-subtitle">Active Members</div>
+                </div>
+                <div class="customers__search">
+                    <form action="#">
+                        <button><img src="icons/mane/search.svg" alt="search"></button>
+                        <input type="text" class="search" placeholder="Search">
+                    </form>
+                </div>
+            </div>
+            <div class="customers__table">
+                <div class="customers__item customers__item-mane">
+                    <div class="customers__item-name">Customer Name</div>
+                    <div class="customers__item-company">Company</div>
+                    <div class="customers__item-phone">Phone Number</div>
+                    <div class="customers__item-email">Email</div>
+                    <div class="customers__item-country">Country</div>
+                    <div class="customers__item-status">Status</div>
+                </div>
+                <div class="customers__underline customers__underline-mane"></div>
+                <div class="customers__item">
+                    <div class="customers__item-name">Jane Cooper</div>
+                    <div class="customers__item-company">Microsoft</div>
+                    <div class="customers__item-phone">(225) 555-0118</div>
+                    <div class="customers__item-email">jane@microsoft.com</div>
+                    <div class="customers__item-country">United States</div>
+                    <div class="customers__item-status bar bar-green">Active</div>
+                </div>
+                <div class="customers__underline"></div>
+                <div class="customers__item">
+                    <div class="customers__item-name">Floyd Miles</div>
+                    <div class="customers__item-company">Yahoo</div>
+                    <div class="customers__item-phone">(205) 555-0100</div>
+                    <div class="customers__item-email">floyd@yahoo.com</div>
+                    <div class="customers__item-country">Kiribati</div>
+                    <div class="customers__item-status bar bar-red">Inactive</div>
+                </div>
+                <div class="customers__underline"></div>
+                <div class="customers__item">
+                    <div class="customers__item-name">Ronald Richards</div>
+                    <div class="customers__item-company">Adobe</div>
+                    <div class="customers__item-phone">(302) 555-0107</div>
+                    <div class="customers__item-email">ronald@adobe.com</div>
+                    <div class="customers__item-country">Israel</div>
+                    <div class="customers__item-status bar bar-red">Inactive</div>
+                </div>
+                <div class="customers__underline"></div>
+                <div class="customers__item">
+                    <div class="customers__item-name">Marvin McKinney</div>
+                    <div class="customers__item-company">Tesla</div>
+                    <div class="customers__item-phone">(252) 555-0126</div>
+                    <div class="customers__item-email">marvin@tesla.com</div>
+                    <div class="customers__item-country">Iran</div>
+                    <div class="customers__item-status bar bar-green">Active</div>
+                </div>
+                <div class="customers__underline"></div>
+                <div class="customers__item">
+                    <div class="customers__item-name">Jerome Bell</div>
+                    <div class="customers__item-company">Google</div>
+                    <div class="customers__item-phone">(629) 555-0129</div>
+                    <div class="customers__item-email">jerome@google.com</div>
+                    <div class="customers__item-country">Réunion</div>
+                    <div class="customers__item-status bar bar-green">Active</div>
+                </div>
+                <div class="customers__underline"></div>
+                <div class="customers__item">
+                    <div class="customers__item-name">Kathryn Murphy</div>
+                    <div class="customers__item-company">Microsoft</div>
+                    <div class="customers__item-phone">(406) 555-0120</div>
+                    <div class="customers__item-email">kathryn@microsoft.com</div>
+                    <div class="customers__item-country">Curaçao</div>
+                    <div class="customers__item-status bar bar-green">Active</div>
+                </div>
+                <div class="customers__underline"></div>
+                <div class="customers__item">
+                    <div class="customers__item-name">Jacob Jones</div>
+                    <div class="customers__item-company">Yahoo</div>
+                    <div class="customers__item-phone">(208) 555-0112</div>
+                    <div class="customers__item-email">jacob@yahoo.com</div>
+                    <div class="customers__item-country">Brazil</div>
+                    <div class="customers__item-status bar bar-green">Active</div>
+                </div>
+                <div class="customers__underline"></div>
+                <div class="customers__item">
+                    <div class="customers__item-name">Kristin Watson</div>
+                    <div class="customers__item-company">Facebook</div>
+                    <div class="customers__item-phone">(704) 555-0127</div>
+                    <div class="customers__item-email">kristin@facebook.com</div>
+                    <div class="customers__item-country">Åland Islands</div>
+                    <div class="customers__item-status bar bar-red">Inactive</div>
+                </div>
+                <div class="customers__underline"></div>
+            </div>
+            <div class="customers__footer">
+                <div class="customers__data">
+                    Showing data 1 to 8 of  256K entries
+                </div>
+                <div class="customers__slider">
+                    <a href="#"><</a>
+                    <a href="#">
+                        <div class="active">1</div>
+                    </a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <div class="customers__slider-dots">...</div>
+                    <a href="#">40</a>
+                    <a href="#">></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

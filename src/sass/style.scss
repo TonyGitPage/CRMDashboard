@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+}
+
+@import 'blocks/fonts';
+@import 'base/variables';
+@import 'blocks/main';
+@import 'blocks/menu';
+@import 'blocks/customers';
+@import 'blocks/bar';
+@import 'blocks/media';

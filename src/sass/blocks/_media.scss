@@ -1,0 +1,192 @@
+@media (max-width: 1440px) {
+    .customers {
+        width: 968px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .menu {
+        width: 290px;
+        ul {
+            a {
+                width: 233px;
+            }
+        }
+        &__chevron {
+            margin-left: 85px;
+        }
+    }
+    .customers {
+        left: 325px;
+        width: 840px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .menu {
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        width: 290px;
+        height: 100vh;
+        padding: 20px 15px;
+        transition: 0.6s all;
+        z-index: 5;
+        &-active {
+            left: 0;
+        }
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: -70px;
+        width: 26px;
+        height: 12px;
+        z-index: 2;
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #000;
+            margin-bottom: 2px;
+            transition: 0.5s all;
+        }
+        &-active {
+            span {
+                margin-bottom: -2px;
+                &:nth-last-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-last-child(2) {
+                    display: none;
+                }
+                &:nth-last-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+    .main {
+        position: relative;
+        z-index: 1;
+    }
+    .customers {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .customers {
+        width: 720px;
+        &__underline {
+            margin: 20px 10px 0 15px;
+        }
+        &__item {
+            padding: 0 10px 0 15px;
+            &-name {
+                font-size: 13px;
+            }
+            &-company {
+                font-size: 13px;
+            }
+            &-phone {
+                font-size: 13px;
+            }
+            &-email {
+                font-size: 13px;
+            }
+            &-country {
+                font-size: 13px;
+            }
+        }
+    }
+    .bar {
+        width: 70px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .customers {
+        width: 520px;
+        &__table {
+            display: flex;
+            margin-top: 40px;
+            overflow-x: auto;
+            height: 470px;
+            &::-webkit-scrollbar {
+                display: none;
+              }
+        }
+        &__item {
+            display: flex;
+            min-width: 500px;
+            display: flex;
+            min-width: 170px;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            &-mane {
+                margin-top: 18px;
+            }
+        }
+        &__underline {
+            height: 450px;
+            border: 1px solid #eee;
+        }
+        &__footer {
+            align-items: center;
+            flex-direction: column;
+        }
+        &__data {
+            margin-top: 40px;
+        }
+        &__slider {
+            margin-top: 25px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .customers {
+        width: 95%;
+        height: 800px;
+        &__header {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__block {
+            text-align: center;
+        }
+        &__search {
+            margin-top: 10px;
+        }
+        &__table {
+            margin-top: 70px;
+        }
+        &__footer {
+            align-items: center;
+            flex-direction: column;
+        }
+        &__data {
+            font-size: 13px;
+            margin-top: 20px;
+        }
+        &__slider {
+            margin-top: 20px;
+        }
+    }
+    .main {
+        margin-bottom: 20px;
+    }
+    .menu {
+        width: 260px;
+    }
+}
