@@ -30,7 +30,7 @@
 </head>
 <body>
 
-    <section class="menu">
+    <nav class="menu">
         <div class="menu__logo">
             <img src="icons/mane/setting_1.svg" alt="logo">
             <div class="menu__logo-text">Dashboard</div>
@@ -89,9 +89,9 @@
             </div>
         </div>
         <div class="menu__overlay"></div>
-    </section>
+    </nav>
 
-    <section class="main">
+    <main class="main">
         <div class="customers">
             <h1>Hello Evano 👋🏼,</h1>
             <div class="hamburger">
@@ -106,8 +106,9 @@
                 </div>
                 <div class="customers__search">
                     <form action="#">
+                        <label for="search"></label>
                         <button><img src="icons/mane/search.svg" alt="search"></button>
-                        <input type="text" class="search" placeholder="Search">
+                        <input id="search" type="text" class="search" placeholder="Search">
                     </form>
                 </div>
             </div>
@@ -199,7 +200,7 @@
                     Showing data 1 to 8 of  256K entries
                 </div>
                 <div class="customers__slider">
-                    <a href="#"><</a>
+                    <a href="#"><span><</span></a>
                     <a href="#">
                         <div class="active">1</div>
                     </a>
@@ -212,7 +213,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
     <script src="js/script.js"></script>
 </body>
